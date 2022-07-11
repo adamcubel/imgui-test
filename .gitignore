@@ -44,3 +44,4 @@ out
 # Visual Studio things
 .vscode
 .vs
+.devcontainer
