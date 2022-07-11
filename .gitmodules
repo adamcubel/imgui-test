@@ -1,9 +1,6 @@
-[submodule "imgui"]
-	path = apps/imgui-test/imgui
+[submodule "imgui-test/imgui"]
+	path = imgui-test/imgui
 	url = https://github.com/ocornut/imgui.git
-	branch = master
-
-[submodule "SDL"]
-	path = apps/imgui-test/sdl
+[submodule "imgui-test/SDL"]
+	path = imgui-test/SDL
 	url = https://github.com/libsdl-org/SDL
-	branch = master
