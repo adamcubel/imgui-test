@@ -1,0 +1,40 @@
+{
+  "name": "Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "ART_USERNAME": "${localEnv:ART_USERNAME}",
+      "ART_PASSWORD": "${localEnv:ART_PASSWORD}"
+    }
+  },
+  "mounts": [],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+  "workspaceFolder": "/workspace",
+  "runArgs": ["--cap-add", "SYS_PTRACE"],
+  "containerUser": "root",
+  "remoteUser": "root",
+  "settings": {
+    "workbench.colorTheme": "Default Dark+",
+    "editor.tabSize": 4,
+    "cmake.configureSettings": {
+      "ENABLE_RTI": "On"
+    },
+    "cmake.generator": "Unix Makefiles",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.parallelJobs": 8
+  },
+  "extensions": [
+    "cschlosser.doxdocgen",
+    "twxs.cmake",
+    "ms-vscode.cmake-tools",
+    "fredericbonnet.cmake-test-adapter",
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cpptools-themes",
+    "jeff-hykin.better-cpp-syntax",
+    "eamodio.gitlens"
+  ],
+  "postAttachCommand": "export EXTENSIONS_CREATED=true"
+}
