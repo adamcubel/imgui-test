@@ -1,6 +1,0 @@
-[DevArtifactory]
-name=Shoard Dev Artifactory
-baseurl=https://${ART_USERNAME}:${ART_PASSWORD}@ibcs-jfrog.gtri.gatech.edu/artifactory/shorad-dev/
-enabled=1
-gpgcheck=0
-sslverify=0
